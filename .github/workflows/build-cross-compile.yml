@@ -155,7 +155,7 @@ jobs:
 
       - name: 'Configure'
         run: >
-          bash configure
+          bash jdk17u-android/configure
           --with-conf-name=linux-${{ matrix.target-cpu }}
           --with-version-opt=${GITHUB_ACTOR}-${GITHUB_SHA}
           --with-boot-jdk=${{ steps.bootjdk.outputs.path }}
